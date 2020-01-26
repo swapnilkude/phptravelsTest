@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="PHPTrvels Web Application Test Automation Test Suite">
+<!--this is called test runner class and will be regression test for running all the test classes-->
+
+<listeners>
+		<listener class-name="com.phpTravels.qa.ExtentReportListener.ExtentReporterNG" /> <!--always give the exact name of extent report package and class name-->
+</listeners>
+
+	<test name="PHPTrvels UI Test Cases">
+		<classes>
+			<class name="com.phpTravels.qa.testcases.HomePageTest"></class>
+		</classes>
+	</test>
+</suite>
