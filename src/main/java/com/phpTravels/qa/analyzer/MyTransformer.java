@@ -11,7 +11,7 @@ import org.testng.annotations.ITestAnnotation;
 public class MyTransformer implements IAnnotationTransformer{
 	
 	//overriding parent methods
-	public void transform(ITestAnnotation annotation, Class MyAccountPageTest, Constructor testConstructor, Method testMethod){
+	public void transform(ITestAnnotation annotation, Class HomePageTest, Constructor testConstructor, Method testMethod){
 
 		annotation.setRetryAnalyzer(RetryAnalyzer.class);
 	}

@@ -14,6 +14,8 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
 import com.phpTravels.qa.util.TestUtil;
@@ -59,20 +61,20 @@ public class TestBase {
 			//E:\\Training\\Automation\\TestNG\\Workplace\\PHPTravels
 			driver = new InternetExplorerDriver();
 	}
-		e_driver = new EventFiringWebDriver(driver);
+	/*	e_driver = new EventFiringWebDriver(driver);
 		// Now create object of EventListerHandler to register it with EventFiringWebDriver
 		eventListener = new WebEventListener();
 		e_driver.register(eventListener);
-		driver = e_driver;
+		driver = e_driver;*/
 		
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.get(url);
-		Thread.sleep(5000);
 		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS); //create util class for timeunit
 		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
-		Assert.assertEquals(driver.getTitle(), "");
+		Assert.assertEquals(driver.getTitle(), "PHPTRAVELS | Travel Technology Partner");
 	}	
+
 	
 	
 }

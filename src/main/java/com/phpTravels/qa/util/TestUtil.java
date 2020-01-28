@@ -25,10 +25,12 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import com.phpTravels.qa.base.TestBase;
 
 
+
+
 public class TestUtil extends TestBase{
 	
 	public static long PAGE_LOAD_TIMEOUT = 60;
-	public static long IMPLICIT_WAIT = 60;
+	public static long IMPLICIT_WAIT = 30;
 	
 	public static String TESTDATA_SHEET_PATH = "E:\\Training\\Automation\\TestNG\\Workplace\\PHPTravels\\src\\main\\java\\com\\phpTravels\\qa\\testdata\\FreeCrmTestData.xlsx";
 	
@@ -88,8 +90,21 @@ public class TestUtil extends TestBase{
 	    	  static public String addOneDay(String date) {
 	    	    return LocalDate.parse(date).plusDays(1).toString();
 	    	  }
-	    	
-	  
+	    	    //getWebDriverWait method create instance of WebDriverWait object with 10 seconds timeout.
+	    	    private static WebDriverWait getWebDriverWait() {
+	    	        return new WebDriverWait(driver, 10);
+	    	    }	    	
+	    	    //waitUntilElementIsVisible method wait until WebElement will be visible.
+	    	    public void waitUntilElementIsVisible(WebElement element) {
+	    	        WebDriverWait webDriverWait = getWebDriverWait();
+	    	        webDriverWait.until(ExpectedConditions.visibilityOf(element));
+	    	    }
+
+	    	    //waitUntilElementIsClickable method wait until WebElement will be clickable.
+	    	    public  void waitUntilElementIsClickable(WebElement element) {
+	    	        WebDriverWait webDriverWait = getWebDriverWait();
+	    	        webDriverWait.until(ExpectedConditions.elementToBeClickable(element));
+	    	    }  
 	public static void takeScreenshotAtEndOfTest() throws IOException {
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		String currentDir = System.getProperty("user.dir");
@@ -97,12 +112,6 @@ public class TestUtil extends TestBase{
 		FileUtils.copyFile(scrFile, new File(currentDir + "/screenshots/" + System.currentTimeMillis() + ".png"));
 		
 		}
-	
-	WebDriverWait wait = new WebDriverWait(driver, 10);
-	
-/*	public WebDriverWait isElelmentpresent(WebElement element){
-		WebDriverWait wait = (WebDriverWait) new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(element));
-		return wait;
-	}*/
+
 	
 }

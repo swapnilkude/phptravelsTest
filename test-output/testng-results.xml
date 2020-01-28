@@ -1,37 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-01-27T18:52:16Z" name="Default suite" finished-at="2020-01-27T18:52:47Z" duration-ms="31178">
+  <suite started-at="2020-01-28T21:54:50Z" name="PHPTrvels Web Application Test Automation Test Suite" finished-at="2020-01-28T22:02:14Z" duration-ms="443567">
     <groups>
     </groups>
-    <test started-at="2020-01-27T18:52:16Z" name="Default test" finished-at="2020-01-27T18:52:47Z" duration-ms="31178">
+    <test started-at="2020-01-28T21:54:50Z" name="PHPTrvels UI Test Cases" finished-at="2020-01-28T22:02:14Z" duration-ms="443567">
       <class name="com.phpTravels.qa.testcases.HomePageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.phpTravels.qa.testcases.HomePageTest@73e9cf30]" started-at="2020-01-28T00:21:55Z" name="setUp" finished-at="2020-01-28T00:22:16Z" duration-ms="20786" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.phpTravels.qa.testcases.HomePageTest@273e7444]" started-at="2020-01-29T03:24:21Z" name="setUp" finished-at="2020-01-29T03:24:50Z" duration-ms="29184" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="quickHomePageHotelLinkPageTest()[pri:0, instance:com.phpTravels.qa.testcases.HomePageTest@73e9cf30]" started-at="2020-01-28T00:22:16Z" name="quickHomePageHotelLinkPageTest" description="Verify that hotel page is opened" finished-at="2020-01-28T00:22:17Z" duration-ms="919" status="PASS">
+        <test-method signature="quickHomePageHotelLinkPageTest()[pri:0, instance:com.phpTravels.qa.testcases.HomePageTest@273e7444]" started-at="2020-01-29T03:24:50Z" name="quickHomePageHotelLinkPageTest" description="Verify that hotel page is opened" finished-at="2020-01-29T03:25:00Z" duration-ms="10104" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quickHomePageHotelLinkPageTest -->
-        <test-method signature="HotelLinkPageTest()[pri:1, instance:com.phpTravels.qa.testcases.HomePageTest@73e9cf30]" started-at="2020-01-28T00:22:17Z" name="HotelLinkPageTest" description="Verify that user can select destination as &#039;Pune&#039;" finished-at="2020-01-28T00:22:24Z" duration-ms="6685" status="PASS">
+        <test-method signature="HotelLinkPageTest()[pri:1, instance:com.phpTravels.qa.testcases.HomePageTest@273e7444]" started-at="2020-01-29T03:25:00Z" name="HotelLinkPageTest" description="Verify that user can select destination as &#039;Pune&#039;" finished-at="2020-01-29T03:25:39Z" duration-ms="38710" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HotelLinkPageTest -->
-        <test-method signature="selectCheckinDateTest()[pri:2, instance:com.phpTravels.qa.testcases.HomePageTest@73e9cf30]" started-at="2020-01-28T00:22:24Z" name="selectCheckinDateTest" description="Verify that user can select selectCheckinDate" finished-at="2020-01-28T00:22:34Z" duration-ms="9637" status="PASS">
+        <test-method signature="selectCheckinDateTest()[pri:2, instance:com.phpTravels.qa.testcases.HomePageTest@273e7444]" started-at="2020-01-29T03:25:39Z" name="selectCheckinDateTest" description="Verify that user can select in out Date" finished-at="2020-01-29T03:26:28Z" duration-ms="49268" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectCheckinDateTest -->
-        <test-method signature="searchHoteslsTest()[pri:3, instance:com.phpTravels.qa.testcases.HomePageTest@73e9cf30]" started-at="2020-01-28T00:22:34Z" name="searchHoteslsTest" description="Verify that user can select selectCheckinDate" finished-at="2020-01-28T00:22:47Z" duration-ms="13779" status="PASS">
+        <test-method signature="searchHoteslsTest()[pri:3, instance:com.phpTravels.qa.testcases.HomePageTest@273e7444]" started-at="2020-01-29T03:26:28Z" name="searchHoteslsTest" description="Verify that user can search hotels" finished-at="2020-01-29T03:27:24Z" duration-ms="55781" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchHoteslsTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.phpTravels.qa.testcases.HomePageTest@73e9cf30]" started-at="2020-01-28T00:22:48Z" name="tearDown" finished-at="2020-01-28T00:22:48Z" duration-ms="674" status="PASS">
+        <test-method signature="namePriceHoteslsTest()[pri:4, instance:com.phpTravels.qa.testcases.HomePageTest@273e7444]" started-at="2020-01-29T03:27:24Z" name="namePriceHoteslsTest" description="verify list and price of search hotels on hotel landing  page" finished-at="2020-01-29T03:32:14Z" duration-ms="289627" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- namePriceHoteslsTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.phpTravels.qa.testcases.HomePageTest@273e7444]" started-at="2020-01-29T03:32:14Z" name="tearDown" finished-at="2020-01-29T03:32:16Z" duration-ms="1917" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.phpTravels.qa.testcases.HomePageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- PHPTrvels UI Test Cases -->
+  </suite> <!-- PHPTrvels Web Application Test Automation Test Suite -->
 </testng-results>

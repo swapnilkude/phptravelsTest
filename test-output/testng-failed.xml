@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test name="Default test(failed)">
+<suite name="Failed suite [PHPTrvels Web Application Test Automation Test Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.phpTravels.qa.ExtentReportListener.ExtentReporterNG"/>
+  </listeners>
+  <test name="PHPTrvels UI Test Cases(failed)">
     <classes>
       <class name="com.phpTravels.qa.testcases.HomePageTest">
         <methods>
           <include name="tearDown"/>
+          <include name="namePriceHoteslsTest"/>
           <include name="searchHoteslsTest"/>
+          <include name="HotelLinkPageTest"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.phpTravels.qa.testcases.HomePageTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- PHPTrvels UI Test Cases(failed) -->
+</suite> <!-- Failed suite [PHPTrvels Web Application Test Automation Test Suite] -->

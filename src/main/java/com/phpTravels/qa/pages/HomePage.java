@@ -51,13 +51,15 @@ public class HomePage extends TestBase {
 	}
 
 	public HotelsPage quickHomePageHotelLinkPage() {
+		
+		testutil.waitUntilElementIsVisible(quickHomePageHotelLink);
 		boolean t1 = quickHomePageHotelLink.isDisplayed();
 		assertTrue(t1, "Test Passed");
 		return new HotelsPage();
 	}
 
 	public HotelsPage selectDestination() {
-
+		testutil.waitUntilElementIsClickable(destinationarea);
 		destinationarea.click();
 		destinationbox.sendKeys("Pune");
 		Verify.verify(destinationarea.isEnabled(), "Test passed");
@@ -66,29 +68,28 @@ public class HomePage extends TestBase {
 		return new HotelsPage();
 	}
 
-	public HotelsPage selectCheckinCheckoutDate() {
-		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
+	public HotelsPage selectCheckinCheckoutDate(String checkindate, String checkoutdate) {
+		testutil.waitUntilElementIsClickable(checkin);
 		checkin.click();
 		checkin.clear();
-		checkin.sendKeys("01/30/20");
+		//checkin.sendKeys("02/05/20");
+		checkin.sendKeys(checkindate);
 		// checkInMnthTitle.click();
-		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
+		testutil.waitUntilElementIsClickable(checkout);
 		checkout.click();
 		checkout.clear();
-		checkout.sendKeys("01/31/20");
-		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
+		checkout.sendKeys(checkoutdate);//"02/07/20"
 		return new HotelsPage();
 	}
 
 	
 	public HotelsPage searchHotesls() throws InterruptedException, IOException {
-		hotelSearch.isEnabled();
+		testutil.waitUntilElementIsVisible(hotelSearch);
 		JavascriptExecutor executor = (JavascriptExecutor)driver;
 		executor.executeScript("arguments[0].click();", hotelSearch);
-			driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
-			//testutil.isElelmentpresent(HotelSearchListtitle);
+			testutil.waitUntilElementIsVisible(HotelSearchListtitle);
+			HotelSearchListtitle.getText();
 			Assert.assertEquals(HotelSearchListtitle.isDisplayed(), true);
-			driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
 			TestUtil.takeScreenshotAtEndOfTest();
 			Thread.sleep(3000);
 		return new HotelsPage();

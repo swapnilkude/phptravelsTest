@@ -7,10 +7,11 @@
 		<listener class-name="com.phpTravels.qa.ExtentReportListener.ExtentReporterNG" /> <!--always give the exact name of extent report package and class name-->
 </listeners>
 
-	<test name="PHPTrvels UI Test Cases">
+	<test name="PHPTrvels UI Test Cases" allow-return-values="true">
 		<classes>
 			<class name="com.phpTravels.qa.testcases.HomePageTest"></class>
-			<class name="com.phpTravels.qa.testcases.HotelsPageTest"></class>
+			<!-- <class name="com.phpTravels.qa.testcases.HotelsPageTest"></class> -->
 		</classes>
 	</test>
+	
 </suite>

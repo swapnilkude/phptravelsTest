@@ -5,7 +5,10 @@ import java.text.ParseException;
 
 import org.apache.log4j.Logger;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import com.phpTravels.qa.base.TestBase;
 import com.phpTravels.qa.pages.HomePage;
@@ -43,17 +46,26 @@ public class HomePageTest extends TestBase {
 		log.info("verify that user can select destination as 'Pune'");
 		homePage.selectDestination();
 	}
-	@Test(priority=2,description="Verify that user can select selectCheckinDate")
+	@Test(priority=2,description="Verify that user can select in out Date")
 	public void selectCheckinDateTest() throws InterruptedException, ParseException {
-		log.info("verify that user can select selectCheckinDate");
-		homePage.selectCheckinCheckoutDate();
+		log.info("Verify that user can select in out Date");
+		homePage.selectCheckinCheckoutDate("05/02/2020", "07/02/2020");
 	}
-	@Test(priority=3,description="Verify that user can select selectCheckinDate")
+	@Test(priority=3,description="Verify that user can search hotels")
 	public void searchHoteslsTest() throws InterruptedException, ParseException, IOException {
 		log.info("verify that user can search hotels");
 		homePage.searchHotesls();
 	}
-	
+	@Test(priority=4,description="verify list and price of search hotels on hotel landing  page")
+	public void namePriceHoteslsTest() {
+		log.info("verify list and price of search hotels on hotel landing  page");
+		hotelPage.hotelResults();
+		
+	}
+	@AfterSuite
+	public void tearDown() {
+		driver.quit();
+	}
 //	Verify that hotel link present on page
 //	verify that user can select destination as 'Pune'
 //	verify that checkin date is curent date
@@ -62,10 +74,6 @@ public class HomePageTest extends TestBase {
 //	verify that user search with valid destination,checkin and check out date
 //	verify that user can see list of hotels as per the search criteria
 	
-	@AfterSuite
-	public void tearDown() {
-		driver.quit();
-	}
-	
+
 
 }

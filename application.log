@@ -1,5 +1,6 @@
-2020-01-28 00:22:16,553  INFO [main] HomePageTest:27 - Loading page
-2020-01-28 00:22:16,858  INFO [main] HomePageTest:35 - Verify that hotel page is opened
-2020-01-28 00:22:17,771  INFO [main] HomePageTest:41 - verify that user can select destination as 'Pune'
-2020-01-28 00:22:24,459  INFO [main] HomePageTest:46 - verify that user can select selectCheckinDate
-2020-01-28 00:22:34,102  INFO [main] HomePageTest:51 - verify that user can search hotels
+2020-01-29 03:24:50,294  INFO [main] HomePageTest:32 - Loading page
+2020-01-29 03:24:50,716  INFO [main] HomePageTest:40 - Verify that hotel page is opened
+2020-01-29 03:25:00,783  INFO [main] HomePageTest:46 - verify that user can select destination as 'Pune'
+2020-01-29 03:25:39,495  INFO [main] HomePageTest:51 - Verify that user can select in out Date
+2020-01-29 03:26:28,768  INFO [main] HomePageTest:56 - verify that user can search hotels
+2020-01-29 03:27:24,550  INFO [main] HomePageTest:61 - verify list and price of search hotels on hotel landing  page

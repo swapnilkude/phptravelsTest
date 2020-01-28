@@ -4,6 +4,10 @@ import java.io.IOException;
 import java.text.ParseException;
 
 import org.apache.log4j.Logger;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.phpTravels.qa.base.TestBase;
@@ -21,12 +25,20 @@ public class HotelsPageTest extends TestBase{
 	public HotelsPageTest() {
 		super();		
 	}
-	
-	@Test(priority=4,description="verify list and price of search hotels on hotel landing  page")
-	public void namePriceHoteslsTest() throws InterruptedException, ParseException, IOException {
+/*	@BeforeSuite
+	public void setUp() throws InterruptedException {
+		initialization();
+		log.info("Loading page");
+		homePage = new HomePage();
+		testUtil = new TestUtil();
+		hotelPage = new HotelsPage();
+	}*/
+/*	@Test(priority=4,description="verify list and price of search hotels on hotel landing  page")
+	public void namePriceHoteslsTest() {
 		log.info("verify list and price of search hotels on hotel landing  page");
 		hotelPage.hotelResults();
-	}
+		
+	}*/
 	
 
 }
