@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Surefire test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
+<td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Jan 26 15:29:52 IST 2020</td>
+<td>Started on:</td><td>Tue Jan 28 02:17:19 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>65 seconds (65396 ms)</td>
+<tr><td>Total time:</td><td>24 seconds (24453 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -68,57 +68,25 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.phpTravels.qa.testcases.HomePageTest.setUp()'><b>setUp</b><br>Test class: com.phpTravels.qa.testcases.HomePageTest</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Timed out waiting for page to load.
-Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
-System info: host: &apos;SWAPNIL-PC&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;9.0.4&apos;
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{se:ieOptions={browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.edgepath=, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, nativeEvents=true, ie.edgechromium=false, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, initialBrowserUrl=http://localhost:39507/, ignoreProtectedModeSettings=false}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), acceptInsecureCerts=false, browserVersion=11, browserName=internet explorer, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
-Session ID: 4cdea970-75e0-4139-9c1a-1210ad765c55
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:370)
-	at com.phpTravels.qa.base.TestBase.initialization(TestBase.java:69)
-	at com.phpTravels.qa.testcases.HomePageTest.setUp(HomePageTest.java:26)
-... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace181078353", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace181078353'><pre>org.openqa.selenium.TimeoutException: Timed out waiting for page to load.
-Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
-System info: host: &apos;SWAPNIL-PC&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;9.0.4&apos;
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{se:ieOptions={browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.edgepath=, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, nativeEvents=true, ie.edgechromium=false, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, initialBrowserUrl=http://localhost:39507/, ignoreProtectedModeSettings=false}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), acceptInsecureCerts=false, browserVersion=11, browserName=internet explorer, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
-Session ID: 4cdea970-75e0-4139-9c1a-1210ad765c55
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:370)
-	at com.phpTravels.qa.base.TestBase.initialization(TestBase.java:69)
-	at com.phpTravels.qa.testcases.HomePageTest.setUp(HomePageTest.java:26)
+<td title='com.phpTravels.qa.testcases.HotelsPageTest.namePriceHoteslsTest()'><b>namePriceHoteslsTest</b><br>Test class: com.phpTravels.qa.testcases.HotelsPageTest<br>Test method: verify list and price of search hotels on hotel landing  page</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.phpTravels.qa.testcases.HotelsPageTest.namePriceHoteslsTest(HotelsPageTest.java:28)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace637091966", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace637091966'><pre>java.lang.NullPointerException
+	at com.phpTravels.qa.testcases.HotelsPageTest.namePriceHoteslsTest(HotelsPageTest.java:28)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
@@ -136,88 +104,8 @@ Session ID: 4cdea970-75e0-4139-9c1a-1210ad765c55
 	at org.testng.TestNG.runSuites(TestNG.java:1144)
 	at org.testng.TestNG.run(TestNG.java:1115)
 	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:379)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:340)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413)
-</pre></div></td>
-<td>65</td>
-<td>com.phpTravels.qa.testcases.HomePageTest@72d1ad2e</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.phpTravels.qa.testcases.HomePageTest.quickHomePageHotelLinkPageTest()'><b>quickHomePageHotelLinkPageTest</b><br>Test class: com.phpTravels.qa.testcases.HomePageTest</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Timed out waiting for page to load.
-Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
-System info: host: &apos;SWAPNIL-PC&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;9.0.4&apos;
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{se:ieOptions={browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.edgepath=, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, nativeEvents=true, ie.edgechromium=false, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, initialBrowserUrl=http://localhost:39507/, ignoreProtectedModeSettings=false}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), acceptInsecureCerts=false, browserVersion=11, browserName=internet explorer, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
-Session ID: 4cdea970-75e0-4139-9c1a-1210ad765c55
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:370)
-	at com.phpTravels.qa.base.TestBase.initialization(TestBase.java:69)
-	at com.phpTravels.qa.testcases.HomePageTest.setUp(HomePageTest.java:26)
-... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1068445309", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1068445309'><pre>org.openqa.selenium.TimeoutException: Timed out waiting for page to load.
-Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
-System info: host: &apos;SWAPNIL-PC&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;9.0.4&apos;
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{se:ieOptions={browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.edgepath=, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, nativeEvents=true, ie.edgechromium=false, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, initialBrowserUrl=http://localhost:39507/, ignoreProtectedModeSettings=false}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), acceptInsecureCerts=false, browserVersion=11, browserName=internet explorer, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
-Session ID: 4cdea970-75e0-4139-9c1a-1210ad765c55
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:370)
-	at com.phpTravels.qa.base.TestBase.initialization(TestBase.java:69)
-	at com.phpTravels.qa.testcases.HomePageTest.setUp(HomePageTest.java:26)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
 	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:379)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:340)
@@ -225,7 +113,35 @@ Session ID: 4cdea970-75e0-4139-9c1a-1210ad765c55
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413)
 </pre></div></td>
 <td>0</td>
-<td>com.phpTravels.qa.testcases.HomePageTest@72d1ad2e</td></tr>
+<td>com.phpTravels.qa.testcases.HotelsPageTest@564fabc8</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.phpTravels.qa.testcases.HomePageTest.HotelLinkPageTest()'><b>HotelLinkPageTest</b><br>Test class: com.phpTravels.qa.testcases.HomePageTest<br>Test method: Verify that user can select destination as 'Pune'</td>
+<td></td>
+<td>5</td>
+<td>com.phpTravels.qa.testcases.HomePageTest@36bc55de</td></tr>
+<tr>
+<td title='com.phpTravels.qa.testcases.HomePageTest.quickHomePageHotelLinkPageTest()'><b>quickHomePageHotelLinkPageTest</b><br>Test class: com.phpTravels.qa.testcases.HomePageTest<br>Test method: Verify that hotel page is opened</td>
+<td></td>
+<td>1</td>
+<td>com.phpTravels.qa.testcases.HomePageTest@36bc55de</td></tr>
+<tr>
+<td title='com.phpTravels.qa.testcases.HomePageTest.searchHoteslsTest()'><b>searchHoteslsTest</b><br>Test class: com.phpTravels.qa.testcases.HomePageTest<br>Test method: Verify that user can select selectCheckinDate</td>
+<td></td>
+<td>11</td>
+<td>com.phpTravels.qa.testcases.HomePageTest@36bc55de</td></tr>
+<tr>
+<td title='com.phpTravels.qa.testcases.HomePageTest.selectCheckinDateTest()'><b>selectCheckinDateTest</b><br>Test class: com.phpTravels.qa.testcases.HomePageTest<br>Test method: Verify that user can select selectCheckinDate</td>
+<td></td>
+<td>5</td>
+<td>com.phpTravels.qa.testcases.HomePageTest@36bc55de</td></tr>
 </table><p>
 </body>
 </html>

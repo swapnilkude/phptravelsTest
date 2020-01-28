@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Jan 27 00:47:07 IST 2020</td>
+<td>Started on:</td><td>Tue Jan 28 00:22:16 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>46 seconds (46921 ms)</td>
+<tr><td>Total time:</td><td>31 seconds (31178 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,109 +67,33 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.phpTravels.qa.testcases.HomePageTest.quickHomePageHotelLinkPageTest()'><b>quickHomePageHotelLinkPageTest</b><br>Test class: com.phpTravels.qa.testcases.HomePageTest</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: Element not clickable at point (525,625). Other element would receive the click: &lt;div class=&quot;wow fadeIn cc-window cc-banner cc-type-info cc-theme-block cc-color-override--1961008818 &quot; id=&quot;cookyGotItBtnBox&quot; role=&quot;dialog&quot; style=&quot;display: flex;&quot; data-wow-delay=&quot;5s&quot; data-wow-duration=&quot;0.5s&quot;&gt; (elementsFromPoint index 0)
-Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
-System info: host: &apos;SWAPNIL-PC&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;9.0.4&apos;
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{se:ieOptions={browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.edgepath=, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, nativeEvents=true, ie.edgechromium=false, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, initialBrowserUrl=http://localhost:16605/, ignoreProtectedModeSettings=false}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), acceptInsecureCerts=false, browserVersion=11, browserName=internet explorer, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
-Session ID: 292b43d3-d3db-4648-baf8-72fd1c763d71
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:275)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
-	at com.phpTravels.qa.pages.HomePage.quickHomePageHotelLinkPage(HomePage.java:94)
-	at com.phpTravels.qa.testcases.HomePageTest.quickHomePageHotelLinkPageTest(HomePageTest.java:36)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1389432760", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1389432760'><pre>org.openqa.selenium.WebDriverException: Element not clickable at point (525,625). Other element would receive the click: &lt;div class=&quot;wow fadeIn cc-window cc-banner cc-type-info cc-theme-block cc-color-override--1961008818 &quot; id=&quot;cookyGotItBtnBox&quot; role=&quot;dialog&quot; style=&quot;display: flex;&quot; data-wow-delay=&quot;5s&quot; data-wow-duration=&quot;0.5s&quot;&gt; (elementsFromPoint index 0)
-Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
-System info: host: &apos;SWAPNIL-PC&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;9.0.4&apos;
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{se:ieOptions={browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.edgepath=, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, nativeEvents=true, ie.edgechromium=false, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, initialBrowserUrl=http://localhost:16605/, ignoreProtectedModeSettings=false}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), acceptInsecureCerts=false, browserVersion=11, browserName=internet explorer, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
-Session ID: 292b43d3-d3db-4648-baf8-72fd1c763d71
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:275)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
-	at com.phpTravels.qa.pages.HomePage.quickHomePageHotelLinkPage(HomePage.java:94)
-	at com.phpTravels.qa.testcases.HomePageTest.quickHomePageHotelLinkPageTest(HomePageTest.java:36)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>20</td>
-<td>com.phpTravels.qa.testcases.HomePageTest@3541cb24</td></tr>
+<td title='com.phpTravels.qa.testcases.HomePageTest.HotelLinkPageTest()'><b>HotelLinkPageTest</b><br>Test class: com.phpTravels.qa.testcases.HomePageTest<br>Test method: Verify that user can select destination as 'Pune'</td>
+<td></td>
+<td>6</td>
+<td>com.phpTravels.qa.testcases.HomePageTest@73e9cf30</td></tr>
+<tr>
+<td title='com.phpTravels.qa.testcases.HomePageTest.quickHomePageHotelLinkPageTest()'><b>quickHomePageHotelLinkPageTest</b><br>Test class: com.phpTravels.qa.testcases.HomePageTest<br>Test method: Verify that hotel page is opened</td>
+<td></td>
+<td>0</td>
+<td>com.phpTravels.qa.testcases.HomePageTest@73e9cf30</td></tr>
+<tr>
+<td title='com.phpTravels.qa.testcases.HomePageTest.searchHoteslsTest()'><b>searchHoteslsTest</b><br>Test class: com.phpTravels.qa.testcases.HomePageTest<br>Test method: Verify that user can select selectCheckinDate</td>
+<td></td>
+<td>13</td>
+<td>com.phpTravels.qa.testcases.HomePageTest@73e9cf30</td></tr>
+<tr>
+<td title='com.phpTravels.qa.testcases.HomePageTest.selectCheckinDateTest()'><b>selectCheckinDateTest</b><br>Test class: com.phpTravels.qa.testcases.HomePageTest<br>Test method: Verify that user can select selectCheckinDate</td>
+<td></td>
+<td>9</td>
+<td>com.phpTravels.qa.testcases.HomePageTest@73e9cf30</td></tr>
 </table><p>
 </body>
 </html>

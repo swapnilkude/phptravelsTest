@@ -6,7 +6,7 @@
       <class name="com.phpTravels.qa.testcases.HomePageTest">
         <methods>
           <include name="tearDown"/>
-          <include name="quickHomePageHotelLinkPageTest"/>
+          <include name="searchHoteslsTest"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.phpTravels.qa.testcases.HomePageTest -->

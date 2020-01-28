@@ -10,6 +10,7 @@
 	<test name="PHPTrvels UI Test Cases">
 		<classes>
 			<class name="com.phpTravels.qa.testcases.HomePageTest"></class>
+			<class name="com.phpTravels.qa.testcases.HotelsPageTest"></class>
 		</classes>
 	</test>
 </suite>

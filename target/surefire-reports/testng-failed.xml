@@ -3,13 +3,11 @@
 <suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
   <test name="Surefire test(failed)">
     <classes>
-      <class name="com.phpTravels.qa.testcases.HomePageTest">
+      <class name="com.phpTravels.qa.testcases.HotelsPageTest">
         <methods>
-          <include name="tearDown"/>
-          <include name="quickHomePageHotelLinkPageTest"/>
-          <include name="setUp"/>
+          <include name="namePriceHoteslsTest"/>
         </methods>
-      </class> <!-- com.phpTravels.qa.testcases.HomePageTest -->
+      </class> <!-- com.phpTravels.qa.testcases.HotelsPageTest -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->

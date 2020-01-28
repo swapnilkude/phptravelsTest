@@ -1,4 +1,2 @@
-com\phpTravels\qa\testcases\SearchHotel2.class
-com\phpTravels\qa\testcases\SearchHotels.class
 com\phpTravels\qa\testcases\HomePageTest.class
-com\phpTravels\qa\testcases\LaunchClose.class
+com\phpTravels\qa\testcases\HotelsPageTest.class
