@@ -3,9 +3,11 @@ package com.phpTravels.qa.pages;
 import static org.testng.Assert.assertTrue;
 
 import java.io.IOException;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -45,6 +47,18 @@ public class HomePage extends TestBase {
 
 	@FindBy(xpath = "//*[@id='hotels']/div/div/form/div/div/div[4]/button")
 	WebElement hotelSearch;
+	
+	@FindBy(xpath = "//*[@id='datepickers-container']/div[1]/nav/div[2]")
+	WebElement monthbar;
+	
+	@FindBy(xpath = "//*[@id='datepickers-container']/div[1]/div/div[2]/div/div")
+	List<WebElement> monthlist;
+	
+	@FindBy(xpath = "//*[@id='datepickers-container']/div[2]/nav/div[2]")
+	WebElement co_monthbar;
+	
+	@FindBy(xpath = "//*[@id='datepickers-container']/div[2]/div/div[2]/div/div")
+	List<WebElement> co_monthlist;
 
 	public HomePage() {
 		PageFactory.initElements(driver, this);
@@ -67,20 +81,43 @@ public class HomePage extends TestBase {
 
 		return new HotelsPage();
 	}
-
-	public HotelsPage selectCheckinCheckoutDate(String checkindate, String checkoutdate) {
-		testutil.waitUntilElementIsClickable(checkin);
+	public HomePage selectCheckInDate(String enterMonth, int enterdate) {
+		testutil.waitUntilElementIsClickable(checkout);
 		checkin.click();
-		checkin.clear();
-		//checkin.sendKeys("02/05/20");
-		checkin.sendKeys(checkindate);
-		// checkInMnthTitle.click();
+		monthbar.click();
+		monthlist.size();
+		for(int i =0; i<= monthlist.size()-1;i++) {
+			String month = monthlist.get(i).getText();
+			if(month.equalsIgnoreCase(enterMonth)) {
+			driver.findElement(By.xpath("//*[@id='datepickers-container']/div[1]/div/div[2]/div/div[@data-month='"+i+"']")).click();
+			WebElement ele = 
+					driver.findElement(By.xpath("//*[@id='datepickers-container']/div[1]/div/div[1]/div[2]/div[@data-date='"+enterdate+"'][@data-month='"+i+"']"));
+			JavascriptExecutor executer = (JavascriptExecutor) driver;
+			executer.executeScript("argumnts[0].click", ele);
+			break;
+			}
+		}
+		return new HomePage();
+	}
+	public HomePage selectCheckOutDate(String enterCoMonth, int enterCodate) {
 		testutil.waitUntilElementIsClickable(checkout);
 		checkout.click();
-		checkout.clear();
-		checkout.sendKeys(checkoutdate);//"02/07/20"
-		return new HotelsPage();
+		co_monthbar.click();
+		co_monthlist.size();
+		for(int i =0; i<= co_monthlist.size()-1;i++) {
+			String month = co_monthlist.get(i).getText();
+			if(month.equalsIgnoreCase(enterCoMonth)) {
+			driver.findElement(By.xpath("//*[@id='datepickers-container']/div[2]/div/div[2]/div/div[@data-month='"+i+"']")).click();
+			WebElement ele = 
+					driver.findElement(By.xpath("//*[@id='datepickers-container']/div[2]/div/div[1]/div[2]/div[@data-date='"+enterCodate+"'][@data-month='"+i+"']"));
+			JavascriptExecutor executer = (JavascriptExecutor) driver;
+			executer.executeScript("argumnts[0].click", ele);
+			break;
+			}
+		}
+		return new HomePage();
 	}
+
 
 	
 	public HotelsPage searchHotesls() throws InterruptedException, IOException {

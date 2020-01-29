@@ -49,7 +49,8 @@ public class HomePageTest extends TestBase {
 	@Test(priority=2,description="Verify that user can select in out Date")
 	public void selectCheckinDateTest() throws InterruptedException, ParseException {
 		log.info("Verify that user can select in out Date");
-		homePage.selectCheckinCheckoutDate("05/02/2020", "07/02/2020");
+		homePage.selectCheckInDate("Feb", 5);
+		homePage.selectCheckOutDate("Feb", 7);
 	}
 	@Test(priority=3,description="Verify that user can search hotels")
 	public void searchHoteslsTest() throws InterruptedException, ParseException, IOException {

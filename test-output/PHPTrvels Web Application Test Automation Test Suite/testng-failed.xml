@@ -8,10 +8,12 @@
     <classes>
       <class name="com.phpTravels.qa.testcases.HomePageTest">
         <methods>
+          <include name="selectCheckinDateTest"/>
           <include name="tearDown"/>
           <include name="namePriceHoteslsTest"/>
           <include name="searchHoteslsTest"/>
           <include name="HotelLinkPageTest"/>
+          <include name="quickHomePageHotelLinkPageTest"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.phpTravels.qa.testcases.HomePageTest -->
