@@ -55,7 +55,7 @@ public class HomePageTest extends TestBase {
 		log.info("verify that user can select destination as 'Pune'");
 		homePage.selectDestination();
 	}
-	@Test(priority=2,dataProvider = "data-provider",description="Verify that user can select in out Date")
+	@Test(priority=2,description="Verify that user can select in out Date")
 	public void selectCheckinDateTest() throws InterruptedException, ParseException {
 		log.info("Verify that user can select in out Date");
 		homePage.selectCheckInDate("Feb", 5);
