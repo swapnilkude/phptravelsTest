@@ -8,7 +8,7 @@ import org.testng.annotations.ITestAnnotation;
 
 //for handling more than 1 methods of fail
 
-public class MyTransformer implements IAnnotationTransformer{
+public class PhpTravelTransformer implements IAnnotationTransformer{
 	
 	//overriding parent methods
 	public void transform(ITestAnnotation annotation, Class HomePageTest, Constructor testConstructor, Method testMethod){

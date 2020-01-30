@@ -4,11 +4,13 @@ import java.io.IOException;
 import java.text.ParseException;
 
 import org.apache.log4j.Logger;
+import org.testng.Assert;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import com.phpTravels.qa.base.TestBase;
 import com.phpTravels.qa.pages.HomePage;
@@ -28,13 +30,18 @@ public class HomePageTest extends TestBase {
 
 	@BeforeSuite
 	public void setUp() throws InterruptedException {
-		initialization();
+		initialization("weburl");
 		log.info("Loading page");
 		homePage = new HomePage();
 		testUtil = new TestUtil();
 		hotelPage = new HotelsPage();
+		Assert.assertEquals(driver.getTitle(), "PHPTRAVELS | Travel Technology Partner");
 	}
-
+	@DataProvider(name = "date-selecter")
+    public Object[][] dataProviderMethod() {
+        return new Object[][] { 
+        	{ "Feb", 5 } };
+    }
 	@Test(priority=0,description="Verify that hotel page is opened")
 	public void quickHomePageHotelLinkPageTest() {
 		log.info("Verify that hotel page is opened");
@@ -46,7 +53,7 @@ public class HomePageTest extends TestBase {
 		log.info("verify that user can select destination as 'Pune'");
 		homePage.selectDestination();
 	}
-	@Test(priority=2,description="Verify that user can select in out Date")
+	@Test(priority=2,dataProvider = "data-provider",description="Verify that user can select in out Date")
 	public void selectCheckinDateTest() throws InterruptedException, ParseException {
 		log.info("Verify that user can select in out Date");
 		homePage.selectCheckInDate("Feb", 5);

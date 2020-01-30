@@ -99,6 +99,7 @@ public class HomePage extends TestBase {
 		}
 		return new HomePage();
 	}
+	//This method/step is to select the check out date
 	public HomePage selectCheckOutDate(String enterCoMonth, int enterCodate) {
 		testutil.waitUntilElementIsClickable(checkout);
 		checkout.click();
@@ -106,8 +107,11 @@ public class HomePage extends TestBase {
 		co_monthlist.size();
 		for(int i =0; i<= co_monthlist.size()-1;i++) {
 			String month = co_monthlist.get(i).getText();
+			//select the the month chosen by user
 			if(month.equalsIgnoreCase(enterCoMonth)) {
+			//click on the month to be selected
 			driver.findElement(By.xpath("//*[@id='datepickers-container']/div[2]/div/div[2]/div/div[@data-month='"+i+"']")).click();
+			//click on the date to select
 			WebElement ele = 
 					driver.findElement(By.xpath("//*[@id='datepickers-container']/div[2]/div/div[1]/div[2]/div[@data-date='"+enterCodate+"'][@data-month='"+i+"']"));
 			JavascriptExecutor executer = (JavascriptExecutor) driver;
@@ -118,8 +122,6 @@ public class HomePage extends TestBase {
 		return new HomePage();
 	}
 
-
-	
 	public HotelsPage searchHotesls() throws InterruptedException, IOException {
 		testutil.waitUntilElementIsVisible(hotelSearch);
 		JavascriptExecutor executor = (JavascriptExecutor)driver;
