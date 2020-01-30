@@ -33,7 +33,7 @@ public class AdminPageTest extends TestBase {
 
 	//@Test(priority=0,description="Verify that hotel page is opened")
 	public void quickHomePageHotelLinkPageTest() {
-		log.info("Verify that hotel page is opened");
+		log.info("Verify that Admin page is opened");
 		adminPage.adminHomePage();
 	}
 	

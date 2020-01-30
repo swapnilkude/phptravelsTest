@@ -1,2 +1,3 @@
+com\phpTravels\qa\testcases\AdminPageTest.class
 com\phpTravels\qa\testcases\HomePageTest.class
 com\phpTravels\qa\testcases\HotelsPageTest.class

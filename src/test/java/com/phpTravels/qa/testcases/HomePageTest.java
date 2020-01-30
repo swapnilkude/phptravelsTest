@@ -40,7 +40,9 @@ public class HomePageTest extends TestBase {
 	@DataProvider(name = "date-selecter")
     public Object[][] dataProviderMethod() {
         return new Object[][] { 
-        	{ "Feb", 5 } };
+        	{ "Feb", 5 }, 
+        	{ "Feb", 7 } 
+        	};
     }
 	@Test(priority=0,description="Verify that hotel page is opened")
 	public void quickHomePageHotelLinkPageTest() {

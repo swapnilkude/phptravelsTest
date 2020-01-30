@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Surefire test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/5</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/4</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jan 30 00:28:45 IST 2020</td>
+<td>Started on:</td><td>Thu Jan 30 13:50:45 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (63 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (92 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,18 +77,16 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.phpTravels.qa.testcases.HomePageTest.setUp()'><b>setUp</b><br>Test class: com.phpTravels.qa.testcases.HomePageTest</td>
 <td><div><pre>java.lang.AssertionError: expected [PHPTRAVELS | Travel Technology Partner] but found [www.phptravels.net | 522: Connection timed out]
-	at com.phpTravels.qa.base.TestBase.initialization(TestBase.java:75)
-	at com.phpTravels.qa.testcases.HomePageTest.setUp(HomePageTest.java:31)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1506938939", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1506938939'><pre>java.lang.AssertionError: expected [PHPTRAVELS | Travel Technology Partner] but found [www.phptravels.net | 522: Connection timed out]
+	at com.phpTravels.qa.testcases.HomePageTest.setUp(HomePageTest.java:38)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2079961240", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2079961240'><pre>java.lang.AssertionError: expected [PHPTRAVELS | Travel Technology Partner] but found [www.phptravels.net | 522: Connection timed out]
 	at org.testng.Assert.fail(Assert.java:93)
 	at org.testng.Assert.failNotEquals(Assert.java:512)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
 	at org.testng.Assert.assertEquals(Assert.java:115)
 	at org.testng.Assert.assertEquals(Assert.java:189)
 	at org.testng.Assert.assertEquals(Assert.java:199)
-	at com.phpTravels.qa.base.TestBase.initialization(TestBase.java:75)
-	at com.phpTravels.qa.testcases.HomePageTest.setUp(HomePageTest.java:31)
+	at com.phpTravels.qa.testcases.HomePageTest.setUp(HomePageTest.java:38)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -114,8 +112,53 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413)
 </pre></div></td>
-<td>189</td>
-<td>com.phpTravels.qa.testcases.HomePageTest@3a93b025</td></tr>
+<td>188</td>
+<td>com.phpTravels.qa.testcases.HomePageTest@16d04d3d</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.phpTravels.qa.testcases.HomePageTest.selectCheckinDateTest()'><b>selectCheckinDateTest</b><br>Test class: com.phpTravels.qa.testcases.HomePageTest<br>Test method: Verify that user can select in out Date</td>
+<td><div><pre>org.testng.TestNGException: 
+Method public void com.phpTravels.qa.testcases.HomePageTest.selectCheckinDateTest() throws java.lang.InterruptedException,java.text.ParseException requires a @DataProvider named : data-provider
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace791408866", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace791408866'><pre>org.testng.TestNGException: 
+Method public void com.phpTravels.qa.testcases.HomePageTest.selectCheckinDateTest() throws java.lang.InterruptedException,java.text.ParseException requires a @DataProvider named : data-provider
+	at org.testng.internal.Parameters.findDataProvider(Parameters.java:336)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:498)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1308)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:1036)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1126)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:379)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:340)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413)
+</pre></div></td>
+<td>0</td>
+<td>com.phpTravels.qa.testcases.HomePageTest@16d04d3d</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -127,18 +170,16 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.phpTravels.qa.testcases.HomePageTest.HotelLinkPageTest()'><b>HotelLinkPageTest</b><br>Test class: com.phpTravels.qa.testcases.HomePageTest<br>Test method: Verify that user can select destination as 'Pune'</td>
 <td><div><pre>java.lang.AssertionError: expected [PHPTRAVELS | Travel Technology Partner] but found [www.phptravels.net | 522: Connection timed out]
-	at com.phpTravels.qa.base.TestBase.initialization(TestBase.java:75)
-	at com.phpTravels.qa.testcases.HomePageTest.setUp(HomePageTest.java:31)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1496220730", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1496220730'><pre>java.lang.AssertionError: expected [PHPTRAVELS | Travel Technology Partner] but found [www.phptravels.net | 522: Connection timed out]
+	at com.phpTravels.qa.testcases.HomePageTest.setUp(HomePageTest.java:38)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace95322593", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace95322593'><pre>java.lang.AssertionError: expected [PHPTRAVELS | Travel Technology Partner] but found [www.phptravels.net | 522: Connection timed out]
 	at org.testng.Assert.fail(Assert.java:93)
 	at org.testng.Assert.failNotEquals(Assert.java:512)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
 	at org.testng.Assert.assertEquals(Assert.java:115)
 	at org.testng.Assert.assertEquals(Assert.java:189)
 	at org.testng.Assert.assertEquals(Assert.java:199)
-	at com.phpTravels.qa.base.TestBase.initialization(TestBase.java:75)
-	at com.phpTravels.qa.testcases.HomePageTest.setUp(HomePageTest.java:31)
+	at com.phpTravels.qa.testcases.HomePageTest.setUp(HomePageTest.java:38)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -165,22 +206,20 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413)
 </pre></div></td>
 <td>0</td>
-<td>com.phpTravels.qa.testcases.HomePageTest@3a93b025</td></tr>
+<td>com.phpTravels.qa.testcases.HomePageTest@16d04d3d</td></tr>
 <tr>
 <td title='com.phpTravels.qa.testcases.HomePageTest.namePriceHoteslsTest()'><b>namePriceHoteslsTest</b><br>Test class: com.phpTravels.qa.testcases.HomePageTest<br>Test method: verify list and price of search hotels on hotel landing  page</td>
 <td><div><pre>java.lang.AssertionError: expected [PHPTRAVELS | Travel Technology Partner] but found [www.phptravels.net | 522: Connection timed out]
-	at com.phpTravels.qa.base.TestBase.initialization(TestBase.java:75)
-	at com.phpTravels.qa.testcases.HomePageTest.setUp(HomePageTest.java:31)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1846982837", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1846982837'><pre>java.lang.AssertionError: expected [PHPTRAVELS | Travel Technology Partner] but found [www.phptravels.net | 522: Connection timed out]
+	at com.phpTravels.qa.testcases.HomePageTest.setUp(HomePageTest.java:38)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace569138567", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace569138567'><pre>java.lang.AssertionError: expected [PHPTRAVELS | Travel Technology Partner] but found [www.phptravels.net | 522: Connection timed out]
 	at org.testng.Assert.fail(Assert.java:93)
 	at org.testng.Assert.failNotEquals(Assert.java:512)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
 	at org.testng.Assert.assertEquals(Assert.java:115)
 	at org.testng.Assert.assertEquals(Assert.java:189)
 	at org.testng.Assert.assertEquals(Assert.java:199)
-	at com.phpTravels.qa.base.TestBase.initialization(TestBase.java:75)
-	at com.phpTravels.qa.testcases.HomePageTest.setUp(HomePageTest.java:31)
+	at com.phpTravels.qa.testcases.HomePageTest.setUp(HomePageTest.java:38)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -207,22 +246,20 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413)
 </pre></div></td>
 <td>0</td>
-<td>com.phpTravels.qa.testcases.HomePageTest@3a93b025</td></tr>
+<td>com.phpTravels.qa.testcases.HomePageTest@16d04d3d</td></tr>
 <tr>
 <td title='com.phpTravels.qa.testcases.HomePageTest.quickHomePageHotelLinkPageTest()'><b>quickHomePageHotelLinkPageTest</b><br>Test class: com.phpTravels.qa.testcases.HomePageTest<br>Test method: Verify that hotel page is opened</td>
 <td><div><pre>java.lang.AssertionError: expected [PHPTRAVELS | Travel Technology Partner] but found [www.phptravels.net | 522: Connection timed out]
-	at com.phpTravels.qa.base.TestBase.initialization(TestBase.java:75)
-	at com.phpTravels.qa.testcases.HomePageTest.setUp(HomePageTest.java:31)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace708443754", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace708443754'><pre>java.lang.AssertionError: expected [PHPTRAVELS | Travel Technology Partner] but found [www.phptravels.net | 522: Connection timed out]
+	at com.phpTravels.qa.testcases.HomePageTest.setUp(HomePageTest.java:38)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace123337428", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace123337428'><pre>java.lang.AssertionError: expected [PHPTRAVELS | Travel Technology Partner] but found [www.phptravels.net | 522: Connection timed out]
 	at org.testng.Assert.fail(Assert.java:93)
 	at org.testng.Assert.failNotEquals(Assert.java:512)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
 	at org.testng.Assert.assertEquals(Assert.java:115)
 	at org.testng.Assert.assertEquals(Assert.java:189)
 	at org.testng.Assert.assertEquals(Assert.java:199)
-	at com.phpTravels.qa.base.TestBase.initialization(TestBase.java:75)
-	at com.phpTravels.qa.testcases.HomePageTest.setUp(HomePageTest.java:31)
+	at com.phpTravels.qa.testcases.HomePageTest.setUp(HomePageTest.java:38)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -249,22 +286,20 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413)
 </pre></div></td>
 <td>0</td>
-<td>com.phpTravels.qa.testcases.HomePageTest@3a93b025</td></tr>
+<td>com.phpTravels.qa.testcases.HomePageTest@16d04d3d</td></tr>
 <tr>
 <td title='com.phpTravels.qa.testcases.HomePageTest.searchHoteslsTest()'><b>searchHoteslsTest</b><br>Test class: com.phpTravels.qa.testcases.HomePageTest<br>Test method: Verify that user can search hotels</td>
 <td><div><pre>java.lang.AssertionError: expected [PHPTRAVELS | Travel Technology Partner] but found [www.phptravels.net | 522: Connection timed out]
-	at com.phpTravels.qa.base.TestBase.initialization(TestBase.java:75)
-	at com.phpTravels.qa.testcases.HomePageTest.setUp(HomePageTest.java:31)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1111379131", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1111379131'><pre>java.lang.AssertionError: expected [PHPTRAVELS | Travel Technology Partner] but found [www.phptravels.net | 522: Connection timed out]
+	at com.phpTravels.qa.testcases.HomePageTest.setUp(HomePageTest.java:38)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace515520300", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace515520300'><pre>java.lang.AssertionError: expected [PHPTRAVELS | Travel Technology Partner] but found [www.phptravels.net | 522: Connection timed out]
 	at org.testng.Assert.fail(Assert.java:93)
 	at org.testng.Assert.failNotEquals(Assert.java:512)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
 	at org.testng.Assert.assertEquals(Assert.java:115)
 	at org.testng.Assert.assertEquals(Assert.java:189)
 	at org.testng.Assert.assertEquals(Assert.java:199)
-	at com.phpTravels.qa.base.TestBase.initialization(TestBase.java:75)
-	at com.phpTravels.qa.testcases.HomePageTest.setUp(HomePageTest.java:31)
+	at com.phpTravels.qa.testcases.HomePageTest.setUp(HomePageTest.java:38)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -291,49 +326,7 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413)
 </pre></div></td>
 <td>0</td>
-<td>com.phpTravels.qa.testcases.HomePageTest@3a93b025</td></tr>
-<tr>
-<td title='com.phpTravels.qa.testcases.HomePageTest.selectCheckinDateTest()'><b>selectCheckinDateTest</b><br>Test class: com.phpTravels.qa.testcases.HomePageTest<br>Test method: Verify that user can select in out Date</td>
-<td><div><pre>java.lang.AssertionError: expected [PHPTRAVELS | Travel Technology Partner] but found [www.phptravels.net | 522: Connection timed out]
-	at com.phpTravels.qa.base.TestBase.initialization(TestBase.java:75)
-	at com.phpTravels.qa.testcases.HomePageTest.setUp(HomePageTest.java:31)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace488600086", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace488600086'><pre>java.lang.AssertionError: expected [PHPTRAVELS | Travel Technology Partner] but found [www.phptravels.net | 522: Connection timed out]
-	at org.testng.Assert.fail(Assert.java:93)
-	at org.testng.Assert.failNotEquals(Assert.java:512)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
-	at org.testng.Assert.assertEquals(Assert.java:115)
-	at org.testng.Assert.assertEquals(Assert.java:189)
-	at org.testng.Assert.assertEquals(Assert.java:199)
-	at com.phpTravels.qa.base.TestBase.initialization(TestBase.java:75)
-	at com.phpTravels.qa.testcases.HomePageTest.setUp(HomePageTest.java:31)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:326)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:379)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:340)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413)
-</pre></div></td>
-<td>0</td>
-<td>com.phpTravels.qa.testcases.HomePageTest@3a93b025</td></tr>
+<td>com.phpTravels.qa.testcases.HomePageTest@16d04d3d</td></tr>
 </table><p>
 </body>
 </html>

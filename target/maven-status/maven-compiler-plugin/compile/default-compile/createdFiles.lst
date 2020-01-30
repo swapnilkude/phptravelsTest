@@ -1,10 +1,8 @@
 com\phpTravels\qa\analyzer\RetryAnalyzer.class
 com\phpTravels\qa\pages\HotelsPage.class
+com\phpTravels\qa\analyzer\PhpTravelTransformer.class
 com\phpTravels\qa\pages\HomePage.class
-com\phpTravels\qa\util\WebEventListener.class
-com\phpTravels\qa\analyzer\MyTransformer.class
 com\phpTravels\qa\base\TestBase.class
-com\phpTravels\qa\pages\MyAccountPage.class
 com\phpTravels\qa\util\TestUtil.class
 com\phpTravels\qa\ExtentReportListener\ExtentReporterNG.class
-com\phpTravels\qa\pages\HomePage2.class
+com\phpTravels\qa\pages\AdminPage.class

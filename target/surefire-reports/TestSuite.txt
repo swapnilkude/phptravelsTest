@@ -1,8 +1,13 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 1, Errors: 0, Skipped: 6, Time elapsed: 191.439 s <<< FAILURE! - in TestSuite
-setUp(com.phpTravels.qa.testcases.HomePageTest)  Time elapsed: 190.517 s  <<< FAILURE!
+Tests run: 7, Failures: 2, Errors: 0, Skipped: 5, Time elapsed: 191.065 s <<< FAILURE! - in TestSuite
+setUp(com.phpTravels.qa.testcases.HomePageTest)  Time elapsed: 190.267 s  <<< FAILURE!
 java.lang.AssertionError: expected [PHPTRAVELS | Travel Technology Partner] but found [www.phptravels.net | 522: Connection timed out]
-	at com.phpTravels.qa.testcases.HomePageTest.setUp(HomePageTest.java:31)
+	at com.phpTravels.qa.testcases.HomePageTest.setUp(HomePageTest.java:38)
+
+selectCheckinDateTest(com.phpTravels.qa.testcases.HomePageTest)  Time elapsed: 190.33 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Method public void com.phpTravels.qa.testcases.HomePageTest.selectCheckinDateTest() throws java.lang.InterruptedException,java.text.ParseException requires a @DataProvider named : data-provider
 
