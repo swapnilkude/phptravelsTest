@@ -1,5 +1,17 @@
-<<<<<<< HEAD
-# PHPTravels
+
+Automation framework for ‘PHPTravels Web Application testing’ 
 =======
-# phptravelsTest
->>>>>>> e6bb550b9b009f4c7bdb8b69eea83c1d8a6e7987
+Technology Used :
+
+    Java, TestNG, Selenium, Maven
+    Framework Used: Page Object Model
+    
+Prerequisite:
+
+  Java environment
+  Maven
+
+How to use:
+
+    Go to project path in terminal. For example: E:\Automation\TestNG\Workplace\PHPTravels>
+    Run mvn clean install
